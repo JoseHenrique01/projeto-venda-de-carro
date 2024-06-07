@@ -3,79 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Venda seu carro !</title>
+  <title>Sell your car!</title>
   <link rel="stylesheet" href="style.css">
 </head>
   <body>
     <div class="container">
       <div class="header">
-        <h3>Cadastre seu veiculo para vende mais rapido!</h3>
+        <h3>Register your vehicle to sell faster!</h3>
       </div>
       <div class="form-container">
         <div class="form-header">
-          <p>FORMULARIO</p>
+          <p>FORM</p>
         </div>
         <div class="form-body">
-          <h1 class="form-title">Venda facil o seu carro</h1>
-          <p>Descreva as caracteristicas e marque os opcionais que ele possui</p>
+          <h1 class="form-title">Sell your car easily</h1>
+          <p>Describe the characteristics and check the options it has</p>
           <form>  
-            <!-- Titulo do anuncio -->
+            <!-- Ad title -->
             <div class="box-input">
-                  <label for="title">Titulo do anuncio <span class="required-field">*</span></label>
+                  <label for="title">Ad title <span class="required-field">*</span></label>
                   <input 
                   type="text" 
                   name="title" 
                   id="title" 
                   class="block" 
-                  placeholder="Um titulo para o seu anuncio" 
+                  placeholder="A headline for your ad" 
                   minlength="1" 
                   maxlength="30" 
                   required
                 />
             </div>
-            <!-- Defina o preço -->
+            <!-- Set the price -->
             <div class="box-input">
-              <label for="price">Defina o preço<span class="required-field">*</span></label>
+              <label for="price">Set the price<span class="required-field">*</span></label>
               <input 
                 type="number" 
                 name="price" 
                 id="price" 
                 class="block" 
-                placeholder="Defina o preço"
+                placeholder="Set the price"
                 required
               />
             </div>
-            <!-- Descrição -->
+            <!-- Description -->
             <div class="box-input">
-              <label for="description">Descrição<span class="required-field">*</span></label>
-              <textarea name="description" id="description" class="block" placeholder="Aqui voce coloca os detalhes do veiculo, por exemplo: se ele tem algum arranhão"></textarea>
+              <label for="description">Description<span class="required-field">*</span></label>
+              <textarea 
+              name="description" 
+              id="description" 
+              class="block" 
+              placeholder="Here you include the details of the vehicle, for example: if it has any scratches"></textarea>
             </div>
-            <!-- Modelo -->
+            <!-- Model -->
             <div class="box-input">
-              <label for="brand">Marca<span class="required-field">*</span></label>
+              <label for="brand">Model<span class="required-field">*</span></label>
               <input 
               type="text" 
               name="model" 
               id="model" 
               class="block" 
-              placeholder="Digite o modelo do veiculo" 
+              placeholder="Enter the vehicle model" 
               required
             />
             </div>
-            <!-- kilometragem -->
+            <!-- Mileage -->
             <div class="box-input">
-              <label for="mileage">Kilometragem<span class="required-field">*</span></label>
+              <label for="mileage">Mileage<span class="required-field">*</span></label>
               <input 
               type="number" 
               name="mileage" 
               id="mileage" 
               class="block" 
-              placeholder="Digite a kilometragem do veiculo" 
+              placeholder="Enter vehicle mileage" 
               required
             />
-            <!-- ano de compra -->
+            <!-- Purchase date -->
             <div class="box-input">
-              <label for="purchase_date">Data de compra<span class="required-field">*</span></label>
+              <label for="purchase_date">Purchase date<span class="required-field">*</span></label>
               <input 
               type="date" 
               name="purchase_date" 
@@ -83,17 +87,17 @@
               class="block" 
               required
             />
-            <!-- cabio -->
+            <!-- transmission -->
             <div class="box-input">
-              <p>Tipo de cambio: <span class="required-field">*</span></p>
+              <p>transmission:<span class="required-field">*</span></p>
               <input type="radio" id="manual" name="gear">
               <label for="manual">Manual</label>
               <input type="radio" id="auto" name="gear">
-              <label for="auto">Automatico</label>
+              <label for="auto">Automatic</label>
             </div>
-            <!-- opcionais -->
+            <!-- optional -->
             <div class="optional-box">
-              <p>opcionais</p>
+              <p>optional</p>
               <ul class="optional-list">
                 <li>
                   <input 
@@ -109,7 +113,7 @@
                   id="alarm" 
                   name="optional[]" 
                   value="alarm">
-                  <label for="alarm">Alarme</label>
+                  <label for="alarm">Alarm</label>
                 </li>
                 <li>
                   <input 
@@ -117,7 +121,7 @@
                   id="ac" 
                   name="optional[]" 
                   value="ac">
-                  <label for="ac">Ar condicionado</label>
+                  <label for="ac">Air conditioner</label>
                 </li>
                 <li>
                   <input 
@@ -125,7 +129,7 @@
                   id="Reverse_camera" 
                   name="optional[]" 
                   value="Reverse_camera">
-                  <label for="Reverse_camera">Camera de ré</label>
+                  <label for="Reverse_camera">Reverse camera</label>
                 </li>
               </ul>
             </div>
@@ -137,7 +141,7 @@
                   id="lane_assist" 
                   name="optional[]" 
                   value="lane_assist">
-                  <label for="lane_assist">Assistente de pista</label>
+                  <label for="lane_assist">Lane assist</label>
                 </li>
                 <li>
                   <input 
@@ -145,7 +149,7 @@
                   id="keyless" 
                   name="optional[]" 
                   value="keyless">
-                  <label for="keyless">Partida keyless</label>
+                  <label for="keyless">Keyless</label>
                 </li>
                 <li>
                   <input 
@@ -153,7 +157,7 @@
                   id="smartphone" 
                   name="optional[]" 
                   value="smartphone">
-                  <label for="smartphone">Integração com celular</label>
+                  <label for="smartphone">Smartphone integration</label>
                 </li>
                 <li>
                   <input 
@@ -161,12 +165,12 @@
                   id="leather_seat" 
                   name="optional[]" 
                   value="leather_seat">
-                  <label for="leather_seat">Banco de couro</label>
+                  <label for="leather_seat">Leather seat</label>
                 </li>
               </ul>
             </div>
             <div class="box-input">
-              <p>fotos do carro: <span class="required-field">*</span></p>
+              <p>car photos: <span class="required-field">*</span></p>
               <input 
               type="file" 
               multiple 
